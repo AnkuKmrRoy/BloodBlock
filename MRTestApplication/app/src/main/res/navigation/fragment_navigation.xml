@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@+id/fabCreateProduct"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/fabCreateProduct"
+        android:name="com.mr.mrtestapplication.ui.fragment.ImageListFragment"
+        android:label="Product List"
+        tools:layout="@layout/fragment_image_list">
+
+        <action
+            android:id="@+id/action_ImageListFragment_to_ViewImageFragment"
+            app:destination="@id/imageViewFragment" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/imageViewFragment"
+        android:name="com.mr.mrtestapplication.ui.fragment.ViewImageFragment"
+        android:label="Full Screen Image"
+        tools:layout="@layout/fragment_view_image">
+
+
+    </fragment>
+
+</navigation>
