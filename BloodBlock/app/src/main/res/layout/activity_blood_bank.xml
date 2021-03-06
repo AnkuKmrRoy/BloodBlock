@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bloodBankViewModel"
+            type="com.encora.bloodblock.ui.bloodbank.BloodBankViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.hospital.fragments.verify_blood.VerifyFragment">
+
+        <include layout="@layout/custom_toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+
+            <TextView
+                android:id="@+id/tvPatientID"
+                android:text="Patient ID"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/edtPatientID"
+                app:layout_constraintTop_toBottomOf="@+id/tvPatientID"
+                android:layout_width="match_parent"
+                android:hint="Enter Patient ID"
+                android:textSize="12dp"
+                android:layout_height="35dp"/>
+
+            <Button
+                android:id="@+id/btScanQR"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/edtPatientID"
+                android:text="Scan"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

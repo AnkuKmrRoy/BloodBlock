@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="patientViewModel"
+            type="com.encora.bloodblock.ui.patient.PatientViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.hospital.fragments.new_request.NewFragment">
+        <include
+            android:id="@+id/incCustomToolBar"
+            layout="@layout/custom_toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/bloodicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDispPatientID"
+                android:hint="Patient ID"
+                android:maxLength="50"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDispHospitalName"
+                android:hint="Hospital Name"
+                android:maxLength="50"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispPatientID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDispPatientName"
+                android:hint="Patient Name"
+                android:maxLength="50"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispPatientMobile"
+                android:hint="Mobile No."
+                android:maxLength="50"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispFatherName"
+                android:hint="Father Name"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispPatientMobile"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispAddress"
+                android:hint="Address"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispDisease"
+                android:hint="Disease"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispAddress"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispBloodGroup"
+                android:hint="Blood Group"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispDisease"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispGender"
+                android:hint="Gender"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:id="@+id/tvDispRemark"
+                android:layout_marginTop="5dp"
+                android:hint="Remarks"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:maxLength="100"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tvDispGender"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

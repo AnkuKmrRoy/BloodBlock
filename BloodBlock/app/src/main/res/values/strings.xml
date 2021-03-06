@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BloodBank</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_hospital">MainActivity</string>
+    <string name="title_home">New Request</string>
+    <string name="title_dashboard">Verify Blood</string>
+    <string name="title_notifications">All Request</string>
+
+    <string-array name="blood_group">
+        <item>Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pending_request">Pending Request Fragment</string>
+    <string name="completed_request">Completed Request Fragment</string>
+
+    <string name="tab_text_1">Pending</string>
+
+    <string name="tab_text_2">Completed</string>
+
+</resources>
